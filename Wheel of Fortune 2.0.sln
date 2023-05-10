@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Wheel of Fortune 2.0", "Wheel of Fortune 2.0\Wheel of Fortune 2.0.vbproj", "{F22F507F-6900-4670-9215-94EDEC742EDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22F507F-6900-4670-9215-94EDEC742EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22F507F-6900-4670-9215-94EDEC742EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22F507F-6900-4670-9215-94EDEC742EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22F507F-6900-4670-9215-94EDEC742EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B2986A4-AE72-46E5-ACC8-CE4E3624B6A6}
+	EndGlobalSection
+EndGlobal
