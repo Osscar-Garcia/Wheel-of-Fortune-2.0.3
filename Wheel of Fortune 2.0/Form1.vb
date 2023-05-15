@@ -2,8 +2,10 @@
 Option Explicit On
 Option Infer Off
 
+Imports System.Diagnostics.Eventing.Reader
 Imports System.IO
 Imports System.Reflection
+Imports System.Runtime.InteropServices
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
 
 'Name: Wheel Of Fortune
@@ -60,58 +62,114 @@ Public Class Form1
     End Sub
     Public Sub changeImage(num As Integer)
 
+        Dim a As Integer
+        a = 0
+        a = a + a
+
         If num = 0 Then
-            PictureBox1.Image = My.Resources.start_of_spin
+            picWheel.Image = My.Resources.start_of_spin
         ElseIf num = 1 Then
-            PictureBox1.Image = My.Resources.Spin_1
+            picWheel.Image = My.Resources.Spin_1
         ElseIf num = 2 Then
-            PictureBox1.Image = My.Resources.Spin_2
+            picWheel.Image = My.Resources.Spin_2
         ElseIf num = 3 Then
-            PictureBox1.Image = My.Resources.Spin_3
+            picWheel.Image = My.Resources.Spin_3
         ElseIf num = 4 Then
-            PictureBox1.Image = My.Resources.Spin_4
+            picWheel.Image = My.Resources.Spin_4
         ElseIf num = 5 Then
-            PictureBox1.Image = My.Resources.Spin_5
+            picWheel.Image = My.Resources.Spin_5
         ElseIf num = 6 Then
-            PictureBox1.Image = My.Resources.Spin_6
+            picWheel.Image = My.Resources.Spin_6
         ElseIf num = 7 Then
-            PictureBox1.Image = My.Resources.Spin_7
+            picWheel.Image = My.Resources.Spin_7
         ElseIf num = 8 Then
-            PictureBox1.Image = My.Resources.Spin_8
+            picWheel.Image = My.Resources.Spin_8
         ElseIf num = 9 Then
-            PictureBox1.Image = My.Resources.Spin_9
+            picWheel.Image = My.Resources.Spin_9
         ElseIf num = 10 Then
-            PictureBox1.Image = My.Resources.Spin_10
+            picWheel.Image = My.Resources.Spin_10
         ElseIf num = 11 Then
-            PictureBox1.Image = My.Resources.Spin_11
+            picWheel.Image = My.Resources.Spin_11
         ElseIf num = 12 Then
-            PictureBox1.Image = My.Resources.Spin_12
+            picWheel.Image = My.Resources.Spin_12
         ElseIf num = 13 Then
-            PictureBox1.Image = My.Resources.Spin_13
+            picWheel.Image = My.Resources.Spin_13
         ElseIf num = 14 Then
-            PictureBox1.Image = My.Resources.Spin_14
+            picWheel.Image = My.Resources.Spin_14
         ElseIf num = 15 Then
-            PictureBox1.Image = My.Resources.Spin_15
+            picWheel.Image = My.Resources.Spin_15
         ElseIf num = 16 Then
-            PictureBox1.Image = My.Resources.Spin_16
+            picWheel.Image = My.Resources.Spin_16
         ElseIf num = 17 Then
-            PictureBox1.Image = My.Resources.Spin_17
+            picWheel.Image = My.Resources.Spin_17
         ElseIf num = 18 Then
-            PictureBox1.Image = My.Resources.Spin_18
+            picWheel.Image = My.Resources.Spin_18
         ElseIf num = 19 Then
-            PictureBox1.Image = My.Resources.Spin_19
+            picWheel.Image = My.Resources.Spin_19
         ElseIf num = 20 Then
-            PictureBox1.Image = My.Resources.Spin_20
+            picWheel.Image = My.Resources.Spin_20
         ElseIf num = 21 Then
-            PictureBox1.Image = My.Resources.Spin_21
+            picWheel.Image = My.Resources.Spin_21
         ElseIf num = 22 Then
-            PictureBox1.Image = My.Resources.Spin_22
+            picWheel.Image = My.Resources.Spin_22
         ElseIf num = 23 Then
-            PictureBox1.Image = My.Resources.Spin_23
+            picWheel.Image = My.Resources.Spin_23
         ElseIf num = 24 Then
-            PictureBox1.Image = My.Resources.Spin_24
+            picWheel.Image = My.Resources.Spin_24
         ElseIf num = 25 Then
-            PictureBox1.Image = My.Resources.Spin_25
+            picWheel.Image = My.Resources.Spin_25
+        End If
+
+        If num = 1 Then
+            lblPlayer2.Text = CStr(a + 10000)
+        ElseIf num = 2 Then
+            lblPlayer2.Text = CStr(a + 2000)
+        ElseIf num = 3 Then
+            lblPlayer2.Text = CStr(a + 5000)
+        ElseIf num = 4 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 5 Then
+            lblPlayer2.Text = "Skipped"
+        ElseIf num = 6 Then
+            lblPlayer2.Text = CStr(0)
+        ElseIf num = 7 Then
+            lblPlayer2.Text = "Skipped"
+        ElseIf num = 8 Then
+            lblPlayer2.Text = CStr(0)
+        ElseIf num = 9 Then
+            lblPlayer2.Text = CStr(5000)
+        ElseIf num = 10 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 11 Then
+            lblPlayer2.Text = CStr(2000)
+        ElseIf num = 12 Then
+            lblPlayer2.Text = CStr(5000)
+        ElseIf num = 13 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 14 Then
+            lblPlayer2.Text = CStr(2000)
+        ElseIf num = 15 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 16 Then
+            lblPlayer2.Text = CStr(2000)
+        ElseIf num = 17 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 18 Then
+            lblPlayer2.Text = CStr(2000)
+        ElseIf num = 19 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 20 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 21 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 22 Then
+            lblPlayer2.Text = CStr(2000)
+        ElseIf num = 23 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 24 Then
+            lblPlayer2.Text = CStr(1000)
+        ElseIf num = 25 Then
+            lblPlayer2.Text = "Skipped"
         End If
 
     End Sub
